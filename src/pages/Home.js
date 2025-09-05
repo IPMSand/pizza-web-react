@@ -1,0 +1,13 @@
+//Next step in the project is to install route , but there comes some outdatedd dependancies but if I updte it the project will be 
+//crashed and wil not work 
+// be careful
+/*
+npm uninstall -g react-scripts
+
+npm install
+
+npx react-scripts start
+
+ALLWAYS be Careful about NPM project and global dependancies to keeep sperate , try ok to learn 
+That's it
+*/
