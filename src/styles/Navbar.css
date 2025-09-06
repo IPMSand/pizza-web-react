@@ -16,7 +16,7 @@
     width: 50px;
 }
 
-.navbar .rightNav{ /* navbar right side */
+.navbar .rightNav{ 
     flex: 50%;
     height: 100%;
     display: flex;
@@ -33,4 +33,38 @@
   border: none;
   color: rgb(238, 237, 237);
   cursor: pointer;
+}
+
+/*--display size settings-- */
+@media  only screen and (max-width:900px) { /*here when screen is small nav links will hidden an dsiplay menu button*/
+  .navbar .rightNav a{
+    display: none;
+  }
+  .navbar .rightNav {
+    justify-content: flex-end; /* after nav links hidden, the button will be left , this will align the button coreectly*/
+    padding-right: 50px; /*align the button after flex-end*/
+  }
+  .navbar .rightNav button{
+    display: inherit;/*parent*/
+  }
+
+
+}
+@media only screen and (min-width:600px) { /*this will hide button when screen is bigger*/
+  .navbar .rightNav button{
+    display: none;
+  }
+  .hiddenLinks{
+    display: none;
+  }
+
+}
+@media only screen and(max-width:600px) {
+  .navbar .rightNav a{
+    width: 70px;
+  }
+
+  .navbar .leftNav{
+    padding: 50px;
+  }
 }
