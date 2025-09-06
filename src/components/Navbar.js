@@ -6,7 +6,10 @@ import '../styles/Navbar.css';
 function Navbar() {
   return (
     <div>
-       <div className='leftNav'>
+      
+      <div className='navbar'>
+        
+         <div className='leftNav'>
          <img src={Logo} alt='Logo here' />
        </div>
 
@@ -17,6 +20,7 @@ function Navbar() {
           <Link to="/contact">Contact </Link>
        </div>
 
+      </div>
 
     </div>
   )
