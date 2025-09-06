@@ -11,3 +11,8 @@ npx react-scripts start
 ALLWAYS be Careful about NPM project and global dependancies to keeep sperate , try ok to learn 
 That's it
 */
+
+/*
+MaterislUi
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+*/

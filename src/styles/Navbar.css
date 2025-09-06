@@ -28,3 +28,9 @@
   text-decoration: none;
   margin: 20px;
 }
+.navbar .rightNav button { /*study this css*/
+  background-color: transparent;
+  border: none;
+  color: rgb(238, 237, 237);
+  cursor: pointer;
+}

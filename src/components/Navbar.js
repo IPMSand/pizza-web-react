@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import ReorderIcon from '@mui/icons-material/Reorder';
+
 import Logo from '../assets/pi.avif';
 import '../styles/Navbar.css';
 
@@ -8,7 +10,7 @@ function Navbar() {
     <div>
       
       <div className='navbar'>
-        
+
          <div className='leftNav'>
          <img src={Logo} alt='Logo here' />
        </div>
@@ -18,6 +20,10 @@ function Navbar() {
           <Link to="/menu">Menu </Link>
           <Link to="/about">About </Link>
           <Link to="/contact">Contact </Link>
+
+          <button><ReorderIcon /></button>
+            
+         
        </div>
 
       </div>
