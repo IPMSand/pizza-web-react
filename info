@@ -1,3 +1,5 @@
+Log
+ <05th September 2025 >
 //Next step in the project is to install route , but there comes some outdatedd dependancies but if I updte it the project will be 
 //crashed and wil not work 
 // be careful
@@ -15,4 +17,23 @@ That's it
 /*
 MaterislUi
 npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+*/
+
+
+
+<h1>< 06th September 2025 ><h1>
+/*
+<<Today did:>>
+1.Navbar Links 
+2.Navbar @media queries and functions for toggle navbar
+3.Installed MaterislUi Icon npm in Navbar.js (here i mistakenly installed other 2 npm too, hopefully it will not affect the project)
+
+<<Today Concerns:>>
+Navbar created
+But after clicking navbar when clicking on the togggle Button (after it appears when screen is small )
+those hidden links will not dissapear when the screen is back on previous max size
+.
+Temp Solution : The problem is within the CSS media queries but I don't understand it.
+                Study that!
+<TODO/Learn: @media queries about HiddenLinks display (make it center)>
 */

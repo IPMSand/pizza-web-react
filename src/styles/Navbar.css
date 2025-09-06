@@ -39,15 +39,20 @@
 @media  only screen and (max-width:900px) { /*here when screen is small nav links will hidden an dsiplay menu button*/
   .navbar .rightNav a{
     display: none;
+    
   }
   .navbar .rightNav {
-    justify-content: flex-end; /* after nav links hidden, the button will be left , this will align the button coreectly*/
-    padding-right: 50px; /*align the button after flex-end*/
+    justify-content:end; /* after nav links hidden, the button will be left , this will align the button coreectly*/
+    padding-right: 30px;
+     
   }
+  .navbar .leftNav {
+    padding-left: 20px; /* Adjust this value as needed for left side align*/
+  }
+
   .navbar .rightNav button{
     display: inherit;/*parent*/
   }
-
 
 }
 @media only screen and (min-width:600px) { /*this will hide button when screen is bigger*/
@@ -57,14 +62,33 @@
   .hiddenLinks{
     display: none;
   }
-
+ 
 }
-@media only screen and(max-width:600px) {
-  .navbar .rightNav a{
-    width: 70px;
-  }
-
-  .navbar .leftNav{
-    padding: 50px;
-  }
+@media only screen and (min-width: 901px) { /* to remove hidden links when screen is back at max-width*/
+    .hiddenLinks {
+        display: none !important;
+    }
 }
+
+
+.navbar #open img { /* Hide the logo when the menu is open */
+  display: none;
+}
+
+.navbar #open .hiddenLinks {/* Show the mobile menu links when the menu is open */
+  display: flex;
+  flex-direction: column; /*  vertical stacking */
+  margin-left: 30px;
+}
+
+
+.navbar #close .hiddenLinks { /* Hide the mobile menu links when the menu is closed */
+  display: none;
+}
+
+.navbar #open a {/* Style the links within the open mobile menu */
+  width: 70px;
+  height: inherit;
+  margin: 5px;
+}
+
